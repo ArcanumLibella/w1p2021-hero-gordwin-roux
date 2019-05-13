@@ -1,11 +1,11 @@
 # Le site dont vous êtes le héros
 
-URL du site : http://votre-url-ici.com
+URL du site : https://very-bad-roadtrip.netlify.com/
 
 ### Groupe
 
-- Prénom & Nom
-- Prénom & Nom
+- Alice GORDWIN
+- Fiona ROUX
 
 ## Prologue
 
