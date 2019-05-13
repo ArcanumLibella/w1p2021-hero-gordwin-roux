@@ -2,7 +2,9 @@
   <transition name="scale">
     <article class="character" :class="{'character--main': character.main}">
       <h2>{{ character.name }}</h2>
-      <h3>{{ character.speciality }}</h3>
+      <p>{{ character.speciality }}</p>
+      <p>{{ character.sexe }}</p>
+
     </article>
   </transition>
 </template>

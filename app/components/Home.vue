@@ -2,7 +2,7 @@
   <div class="big-header">
     <h1>{{ message }}</h1>
     <br />
-    <router-link class="button" to="/Characters">Choix du personnage</router-link>
+    <router-link class="button" to="/Page">Go to Home</router-link>
     <br />
     <button class="button" @click="handleClick">Click me up</button>
   </div>
