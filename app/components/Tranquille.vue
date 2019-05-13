@@ -1,9 +1,9 @@
 <template>
   <div class="big-header">
     <h1>{{ message }} - {{ character }}</h1>
-    <h2>Bienvenue</h2>
+    <h2>Chemin tranquille</h2>
     <br>
-    <router-link class="button" to="/ouAller">Avancer</router-link>
+    <router-link class="button" to="/win">Avancer</router-link>
     <br>
   </div>
 </template>

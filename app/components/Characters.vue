@@ -3,7 +3,7 @@
     <h1>Choix du personnage</h1>
     <br>
 
-    <Character v-for="character in characters" v-bind:character="character" :key="character"></Character>
+    <Character v-for="(character, index) in characters" v-bind:character="character" :key="index"></Character>
 
     <br>
 

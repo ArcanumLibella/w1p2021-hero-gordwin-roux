@@ -1,9 +1,10 @@
 <template>
   <div class="big-header">
     <h1>{{ message }} - {{ character }}</h1>
-    <h2>Bienvenue</h2>
+    <h2>Chemin dangereux</h2>
     <br>
-    <router-link class="button" to="/ouAller">Avancer</router-link>
+    <router-link class="button" to="/ouAller">Revenir</router-link>
+    <router-link class="button" to="/piegemortel">Avancer</router-link>
     <br>
   </div>
 </template>
