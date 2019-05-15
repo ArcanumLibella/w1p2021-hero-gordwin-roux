@@ -9,6 +9,8 @@ import Dangereux from "./components/Dangereux.vue";
 import PiegeMortel from "./components/PiegeMortel.vue";
 import Lose from "./components/Lose.vue";
 import Win from "./components/Win.vue";
+import Game from "./components/Game.vue";
+
 // import Page from "./components/Page.vue";
 // import Characters from "./components/Characters.vue";
 
@@ -52,6 +54,11 @@ const router = new Router({
       path: "/win",
       name: "win",
       component: Win
+    },
+    {
+      path: "/game/:id",
+      name: "game",
+      component: Game
     },
     // {
     //   path: "/characters",

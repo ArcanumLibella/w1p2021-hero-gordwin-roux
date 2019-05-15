@@ -1,0 +1,151 @@
+{
+  "steps": [
+    {
+      "id": 0,
+      "title": "Bienvenue voyageur",
+      "actions": [
+        {
+          "label": "Commencer",
+          "to": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "C'est parti !!!",
+      "actions": [
+        {
+          "label": "Tu préfères prendre l'autoroute ?",
+          "to": 3,
+          "object": "Porte-monnaie"
+        },
+        {
+          "label": "Ou tu préfères prendre les routes de campagne ?",
+          "to": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Paysage 1",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 6
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Renverser un animal",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 7
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Essence ?",
+      "actions": [
+        {
+          "label": "Oui",
+          "to": 9
+        },
+        {
+          "label": "Non",
+          "to": 8
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Tomber en panne",
+      "actions": [
+        {
+          "label": "Aller chercher de l'essence à pied",
+          "to": 8.1
+        },
+        {
+          "label": "Attendre le dépanneur",
+          "to": 8.2
+        }
+      ]
+    },
+    {
+      "id": 8.1,
+      "title": "Manger par les loups",
+      "actions": [
+        {
+          "label": "Recommencer",
+          "to": 0
+        }
+      ]
+    },
+    {
+      "id": 8.2,
+      "title": "Le temps c'est de l'argent",
+      "actions": [
+        {
+          "label": "Recommencer",
+          "to": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Cool, tu as eu un bon point !",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Il serait temps de faire une pause",
+      "actions": [
+        {
+          "label": "Point de vue",
+          "to": 10.1
+        },
+        {
+          "label": "Tu préfères t'arrêter sur le bord de la route",
+          "to": 10.2
+        }
+      ]
+    },
+    {
+      "id": 10.1,
+      "title": "Quel magnifique point de vue !",
+      "actions": [
+        {
+          "label": "On t'interpèle...",
+          "to": 10.11
+        }
+      ]
+    },
+    {
+      "id": 10.2,
+      "title": "La vue est pas mal ici aussi !",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 11
+        }
+      ]
+    },
+    {
+      "id": 10.11,
+      "title": "Les bronzés",
+      "actions": [
+        {
+          "label": "Continuer",
+          "to": 11
+        }
+      ]
+    }
+  ]
+}
