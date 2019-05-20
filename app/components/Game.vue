@@ -2,13 +2,17 @@
   <div class="game">
     <h2>{{ step.title }}</h2>
     <section class="cards">
-      <article
-        class="card"
-        v-for="action in step.actions"
-        @click="doAction(action)"
-        v-if="canDo(action)">
-        <img v-bind:src="step.image">
-        <router-link :to="action.to.toString()">{{ action.label }}</router-link>
+      <article v-for="(action, index) in step.actions"
+        :key="index"
+      >
+        <div
+          class="card"
+          v-if="canDo(action)"
+          @click="doAction(action)"
+        >
+          <router-link :to="action.to.toString()">{{ action.label }}</router-link>
+          <img v-if="action.image" v-bind:src="action.image">
+        </div>
       </article>
       <!-- <li
       v-bind:style="{ 'background-image': 'url('+ require('../assets/images/background_strit.jpg' + step.image) + ')'}">
@@ -17,14 +21,15 @@
 </template>
 
 <script>
-import game from "../data.json";
+import game from "../data";
+import objectService from '../services/objectService';
 console.log(game);
 
 export default {
   data: function() {
     return {
       step: this.getStep(),
-      cover: require("../assets/images/bambi_mother.jpg")
+      cover: this.getStep().image,
     };
   },
   mounted: function() {
@@ -41,12 +46,21 @@ export default {
         return step.id === parseInt(this.$route.params.id);
       });
     },
-    canDo() {
-      return true;
+    canDo(action) {
+      if (!action.object)
+        return true;
+
+      const hasObject = objectService.has(action.object);
+      return hasObject;
     },
     doAction() {
       
-    }
+    },
+    // nextFrame() {
+    //   if (id.801 === "Lose") {
+    //     this.$emit('Lose');
+    //   }
+    // }
   }
 };
 </script>

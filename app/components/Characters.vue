@@ -33,12 +33,13 @@ export default {
           name: "PAMELA",
           speciality: "Force surhumaine",
           sexe: "Femme",
-          image: "../assets/images/bambi_mother.jpg"
+          image: require("../assets/images/roadtrip2.jpg")
         },
         {
           name: "STAN",
           speciality: "Charme légendaire",
-          sexe: "Homme"
+          sexe: "Homme",
+          image: require("../assets/images/roadtrip1.jpg")
         }
       ]
     };
