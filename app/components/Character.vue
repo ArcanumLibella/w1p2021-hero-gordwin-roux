@@ -1,13 +1,11 @@
 <template>
   <transition name="scale">
     <article class="character" :class="{'character--main': character.main}">
-      <h2>{{ character.name }}</h2>
+      <h4>{{ character.name }}</h4>
       <p>{{ character.speciality }}</p>
       <p>{{ character.sexe }}</p>
 
-      <button class="button" @click="choose">Choisir {{ character.name }}</button>
-      <br>
-      <br>
+      <button class="character__button" @click="choose">CHOISIR {{ character.name }}</button>
     </article>
   </transition>
 </template>
@@ -39,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 // Tout le temps
 .scale-enter-active {
-  transition: transform 10s;
+  transition: transform 3s;
 }
 
 // 1ère frame

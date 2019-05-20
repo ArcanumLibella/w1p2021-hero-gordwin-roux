@@ -1,31 +1,44 @@
 <template>
-  <div class="big-header">
-    <h1>Choix du personnage</h1>
-    <br>
+  <div class="game">
+    <h2>Choisis ton personnage !</h2>
+    <h3>"Et choisi le bien, ton choix aura une incidence sur la suite du jeu ;)"</h3>
 
-    <Character v-for="(character, index) in characters" v-bind:character="character" :key="index"></Character>
+    <section class="cards">
+      <Character
+        class="card"
+        v-for="(character, index) in characters"
+        v-bind:character="character"
+        :key="index"
+      >
+        <img v-bind:src="characters.image">
+      </Character>
+    </section>
 
-    <br>
-
-    <router-link class="button" to="/">Go to Home</router-link>
+    <section>
+      <router-link class="game__button" to="/">HOME</router-link>
+      <router-link class="game__button" to="/objects">CONTINUE</router-link>
+    </section>
   </div>
 </template>
 
 <script>
 import Character from "./Character.vue";
+import Game from "./Game.vue";
+
 export default {
   data: function() {
     return {
       characters: [
         {
-          name: "Pamela",
+          name: "PAMELA",
           speciality: "Force surhumaine",
-          sexe: "Fille"
+          sexe: "Femme",
+          image: "../assets/images/bambi_mother.jpg"
         },
         {
-          name: "Stan",
+          name: "STAN",
           speciality: "Charme légendaire",
-          sexe: "Garçon"
+          sexe: "Homme"
         }
       ]
     };

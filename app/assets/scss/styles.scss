@@ -1,18 +1,29 @@
 @import "reset";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap");
 
-$hetic-green: #0de595;
+$dark: #222222;
+$blood: #ad1a1a;
+$beige: #ede9dd;
 
 body,
 button,
 input,
 select,
 textarea {
-  font-family: "Roboto";
+  font-family: "Raleway";
 }
 
-.big-header {
-  background-color: $hetic-green;
+body {
+  background-color: $dark;
+  height: 100vh;
+  overflow: hidden;
+}
+
+//HOME
+.home {
+  background-color: $dark;
   height: 100vh;
 
   display: flex;
@@ -22,36 +33,201 @@ textarea {
   flex-direction: column;
 
   color: white;
+
+  h1,
+  h2 {
+    width: 800px;
+    font-family: "Righteous";
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+
+    font-size: 8rem;
+  }
+
+  h2 {
+    margin-bottom: -10px;
+
+    font-size: 6rem;
+    color: $blood;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+    font-style: italic;
+    color: $beige;
+  }
 }
 
-.button {
-  color: $hetic-green;
-  text-decoration: none;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
+.home__button {
   display: inline-block;
-  border: none;
+  padding: 15px 80px;
   cursor: pointer;
+
+  border-radius: 5px;
+  border: solid 3px $blood;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: $blood;
+
+  &:hover {
+    color: $dark;
+    background-color: $blood;
+  }
+}
+
+// GAME
+.game {
+  background-color: $dark;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  color: white;
+
+  h2 {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 3rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 2rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  h5 {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 1rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  a {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 1rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.game__button {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 80px;
+  cursor: pointer;
+
+  border-radius: 5px;
+  border: solid 3px $blood;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: $blood;
+
+  &:hover {
+    color: $dark;
+    background-color: $blood;
+  }
+}
+
+.character__button {
+  display: block;
+  margin: 15px auto;
+  padding: 5px 20px;
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: $dark;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    color: $blood;
+  }
+}
+
+// CARDS
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card {
+  width: 450px;
+  height: 500px;
+  margin: 25px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 3%;
+
+  font-size: 1rem;
+  background-color: beige;
+  color: $dark;
+
+  &:active {
+    color: $blood;
+  }
+}
+
+// OBJECTS
+.objects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.object {
+  width: 250px;
+  height: 30px;
+  margin: 25px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 3%;
+
+  font-size: 1rem;
+  background-color: beige;
+  color: $dark;
 }
 
 // TRANSITION DE PAGE
 .black-leave-active {
-  animation: toBlack 2s;
+  animation: toBlack 1s;
 }
 
 .black-enter-active {
-  animation: toBlack 2s ease 2s reverse;
+  animation: toBlack 0.3s ease 0.3s reverse;
 }
 
 @keyframes toBlack {
   to {
     opacity: 0;
   }
-}
-
-body {
-  background-color: $hetic-green;
-  height: 100vh;
-  overflow: hidden;
 }

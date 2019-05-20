@@ -1,6 +1,6 @@
 <template>
   <div class="big-header">
-    <h1>{{ message }} - {{ character }}</h1>
+    <h1>{{ message }} {{ character }}</h1>
     <h2>Ou aller ?</h2>
     <br>
     <router-link class="button" to="/chemintranquille">A gauche ?</router-link>
@@ -16,7 +16,7 @@ import characterService from "../services/characterService";
 export default {
   data() {
     return {
-      message: "Hello Hetic",
+      message: "Hello ",
       character: characterService.get()
     };
   },

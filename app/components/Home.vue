@@ -1,10 +1,10 @@
 <template>
-  <div class="big-header">
-    <h1>{{ message }} - {{ character }}</h1>
-    <h2>Bienvenue</h2>
-    <br>
-    <router-link class="button" to="/ouAller">Avancer</router-link>
-    <br>
+  <div class="home">
+    <h2>VERY BAD</h2>
+    <h1>ROADTRIP</h1>
+    <h3>"On the road again"</h3>
+
+    <router-link class="home__button" to="/characters">START</router-link>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import characterService from "../services/characterService";
 export default {
   data() {
     return {
-      message: "Hello Hetic",
+      message: "test",
       character: characterService.get()
     };
   },
