@@ -9,11 +9,6 @@ import Game from "./components/Game.vue";
 import Lose from "./components/Lose.vue";
 import Win from "./components/Win.vue";
 
-// import OuAller from "./components/OuAller.vue";
-// import Tranquille from "./components/Tranquille.vue";
-// import Dangereux from "./components/Dangereux.vue";
-// import PiegeMortel from "./components/PiegeMortel.vue";
-
 Vue.use(Router);
 
 const router = new Router({
@@ -50,41 +45,6 @@ const router = new Router({
       name: "win",
       component: Win
     },
-    // {
-    //   path: "/ouAller",
-    //   name: "ouAller",
-    //   component: OuAller
-    // },
-    // {
-    //   path: "/chemintranquille",
-    //   name: "chemintranquille",
-    //   component: Tranquille
-    // },
-    // {
-    //   path: "/chemindangereux",
-    //   name: "chemindangereux",
-    //   component: Dangereux
-    // },
-    // {
-    //   path: "/piegemortel",
-    //   name: "piegemortel",
-    //   component: PiegeMortel
-    // },
-    // {
-    //   path: "/page",
-    //   name: "page",
-    //   component: Page
-    // },
-    // {
-    //   path: "/object",
-    //   name: "object",
-    //   component: Objet
-    // },
-    // {
-    //   path: "/step3",
-    //   name: "step3",
-    //   component: Step3
-    // },
     {
       // à laisser en dernier
       path: "*",

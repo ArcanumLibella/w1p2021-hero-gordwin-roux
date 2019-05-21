@@ -17,6 +17,7 @@
 <script>
 import Object from "./Object.vue";
 import Game from "./Game.vue";
+import objectService from "../services/objectService";
 
 export default {
   data: function() {
@@ -26,34 +27,61 @@ export default {
           name: "Carambar"
         },
         {
+          name: "Crick"
+        },
+        {
+          name: "Coussin"
+        },
+        {
+          name: "Porte-monnaie"
+        },
+        {
+          name: "Epée en acier Valyrien"
+        },
+        {
           name: "GPS"
         },
         {
-          name: "Vernis"
+          name: "Coton-tige"
+        },
+        {
+          name: "Bombe anti-moustique"
+        },
+        {
+          name: "Tronçonneuse"
+        },
+        {
+          name: "Macbook"
+        },
+        {
+          name: "Téléphone"
         },
         {
           name: "Couverture de survie"
         },
         {
-          name: "Papiers"
+          name: "Pot de vin"
         },
         {
-          name: "Crick"
+          name: "Clé"
         },
         {
-          name: "GPS"
-        },
-        {
-          name: "Vernis"
-        },
-        {
-          name: "Couverture de survie"
+          name: "Taboulet"
         },
         {
           name: "Papiers"
         },
         {
-          name: "Crick"
+          name: "Loupe"
+        },
+        {
+          name: "Clé à molette"
+        },
+        {
+          name: "Cintre"
+        },
+        {
+          name: "Bouteille"
         }
       ]
     };

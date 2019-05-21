@@ -120,7 +120,7 @@ body {
   }
 
   a {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-family: "Righteous";
     font-size: 1rem;
     text-align: center;
@@ -204,11 +204,39 @@ body {
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
+
+  h2 {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 3rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 2rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  h5 {
+    margin-bottom: 5px;
+    font-family: "Righteous";
+    font-size: 1rem;
+    text-align: center;
+    color: $blood;
+  }
+
+  button {
+    margin-top: 0px;
+  }
 }
 
 .object {
   width: 250px;
-  height: 30px;
+  height: 40px;
   margin: 25px;
   padding: 15px;
   text-align: center;
@@ -217,6 +245,24 @@ body {
   font-size: 1rem;
   background-color: beige;
   color: $dark;
+
+  &:hover {
+    background-color: $blood;
+
+    h5 {
+      color: $beige;
+    }
+  }
+
+  .object__button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: $dark;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 // TRANSITION DE PAGE

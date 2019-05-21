@@ -4,8 +4,10 @@ class ObjectService {
   }
   add(object) {
     this.objects.push(object);
+    console.log(this.objects);
   }
   has(object) {
+    console.log(object, this.objects);
     return this.objects.some(obj => obj === object);
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="game">
     <h2>Choisis ton personnage !</h2>
-    <h3>"Et choisi le bien, ton choix aura une incidence sur la suite du jeu ;)"</h3>
+    <h3>"Et choisi le bien, ton choix aura une incidence sur la suite du jeu..."</h3>
 
     <section class="cards">
       <Character
@@ -24,6 +24,7 @@
 <script>
 import Character from "./Character.vue";
 import Game from "./Game.vue";
+import characterService from "../services/characterService";
 
 export default {
   data: function() {
