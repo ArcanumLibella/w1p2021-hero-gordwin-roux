@@ -6,7 +6,7 @@
  <form  name="qcm" 
         id="qcm-test"
         v-on:submit.prevent="checkForm">
-
+<!-- <div class="" v-for="(k, index) in choices"> -->
 <div class="" v-for="(k, index) in choices">
     <input  name="checkbox" 
             type="checkbox"
@@ -182,7 +182,7 @@ export default {
     methods: {
         'checkForm' : function() {
             var goodAnswersList = ['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12'];
-            var counterGoodAnswer = 12;
+            var counterGoodAnswer = 0;
             var counterBadAnswer = 0;
 
             for(var i=0; i < this.checkboxTest.length; i++) {
@@ -196,12 +196,27 @@ export default {
                 }
             }
 
-            // ICI ma condition pour vérifier mes réponses
-            // 
-             //if(var counterGoodAnswer ==12)
+            
+            if(counterGoodAnswer >= 8 && counterBadAnswer == 0 ) {
+                this.$router.push('/Win')    
+            } 
+            else {
+                this.$router.push('/Lose') 
+            }
+               
+             
+             
+            /*  
+            /* ICI ma condition pour vérifier mes réponses QUI FONCTIONNE NE PAS SUPRIMMER COMMENTAIRE SUIVANT : */ 
+            /*if(counterGoodAnswer == 12 && counterBadAnswer == 0 ) {
+                console.log('TU AS GAGNÉ!!!!');    
+            } 
+            else {
+                console.log('TU AS PERDU @@@ LOSER ')
+            } */
 
-            console.log('BONNES REPONSES : ' + counterGoodAnswer);
-            console.log('MAUVAISES REPONSES : ' + counterBadAnswer);
+            /* console.log('BONNES REPONSES : ' + counterGoodAnswer);
+            console.log('MAUVAISES REPONSES : ' + counterBadAnswer); */
             // console.log(this.checkboxTest);
         }
     }
