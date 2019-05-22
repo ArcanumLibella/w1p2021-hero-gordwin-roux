@@ -8,7 +8,7 @@ import Objects from "./components/Objects.vue";
 import Game from "./components/Game.vue";
 import Lose from "./components/Lose.vue";
 import Win from "./components/Win.vue";
-
+import Qcm from "./components/Qcm.vue";
 // import OuAller from "./components/OuAller.vue";
 // import Tranquille from "./components/Tranquille.vue";
 // import Dangereux from "./components/Dangereux.vue";
@@ -49,6 +49,11 @@ const router = new Router({
       path: "/win",
       name: "win",
       component: Win
+    },
+    {
+      path: "/qcm",
+      name: "qcm",
+      component: Qcm
     },
     // {
     //   path: "/ouAller",

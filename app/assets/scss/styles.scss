@@ -233,3 +233,65 @@ body {
     opacity: 0;
   }
 }
+
+// QCM
+ form{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+ input[type="checkbox"]{
+  position: absolute; 
+  left: -9999px;
+} 
+
+  input.submit-form {
+    height: 50px;
+    width: 250px;
+    display: flex;
+  }
+
+  label{
+    display: flex;
+    margin: 20px;
+    position: relative;
+    padding: 0px 18px 8px 70px;
+    border-radius: 3%;
+    background-color: $beige;
+    color: $dark;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s, box-shadow .2s;
+    font-size: 2rem;
+  }
+ 
+  label::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 10px;
+    width: 30px;
+    border: 1px solid $blood;
+    border-radius: 50px;
+    transition: background-color .2s;
+  }
+ 
+  input:checked + label {
+    background-color: $blood;
+
+  }
+
+  input:checked + label::before {
+    background-color: white;
+  }

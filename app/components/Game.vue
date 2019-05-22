@@ -23,7 +23,6 @@
 <script>
 import game from "../data";
 import objectService from '../services/objectService';
-console.log(game);
 
 export default {
   data: function() {
