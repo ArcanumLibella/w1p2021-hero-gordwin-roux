@@ -13,16 +13,16 @@ export default {
     },
     {
       id: 3,
-      title: "Quel cruel dilemme...",
+      title: "C'est parti pour une grande aventure !",
       actions: [
         {
-          label: "Tu préfères prendre l'autoroute ?",
+          label: "Prendre l'autoroute !",
           image: require("/assets/images/roadtrip33.jpg"),
           to: 5,
           object: "Porte-monnaie"
         },
         {
-          label: "Ou tu préfères prendre les routes de campagne ?",
+          label: "Prendre les routes de campagne !",
           image: require("/assets/images/roadtrip10.jpg"),
           to: 5
         }
@@ -377,7 +377,7 @@ export default {
       actions: [
         {
           label: "C'est la transhumance !",
-          image: require("/assets/images/roadtrip21.jpg"),
+          image: require("/assets/images/roadtrip44.jpg"),
           to: 22
         }
       ]
@@ -453,7 +453,7 @@ export default {
         {
           label: "Payer un pot de vin",
           image: require("/assets/images/roadtrip28.jpg"),
-          to: 27,
+          to: 26,
           object: "Pot de vin",
           power: "Charme légendaire"
         },
@@ -489,7 +489,7 @@ export default {
     },
     {
       id: 27,
-      title: "Quel beau paysage !",
+      title: "Reprenons la route...",
       actions: [
         {
           label: "Continuer",
