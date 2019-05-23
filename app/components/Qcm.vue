@@ -1,11 +1,12 @@
 <template>
   <div class="game">
-  <h1>  question </h1> 
+  
  
 
  <form  name="qcm" 
         id="qcm-test"
         v-on:submit.prevent="checkForm">
+        <h2 class='Youpla' >  Ils étaient sur ta route  </h2> 
 <!-- <div class="" v-for="(k, index) in choices"> -->
 <div class="" v-for="(k, index) in choices">
     <input  name="checkbox" 
@@ -58,25 +59,33 @@ export default {
         return {
             'checkboxTest' : [],
             'choices': [
-                {
-                    'label': 'Marie a tout prix',
-                    'value': 'F1'
+              {
+                    'label': 'Fight Club ',
+                    'value': 'F21'
                 },
                 {
                     'label': 'Le Parrain',
                     'value': 'F2'
                 },
                 {
+                    'label': 'Seven',
+                    'value': 'F25'
+                },
+                {
                     'label': 'Walking Dead',
                     'value': 'F3'
                 },
                 {
-                    'label': 'Taxi',
-                    'value': 'F4'
+                    'label': 'Forest Gum ',
+                    'value': 'F14'
                 },
                 {
                     'label': 'Scarface',
                     'value': 'F5'
+                },
+                {
+                    'label': 'Margin Call',
+                    'value': 'F28'
                 },
                 
                 {
@@ -84,20 +93,21 @@ export default {
                     'value': 'F6'
                 },
                 {
+                    'label': 'Fight Club ',
+                    'value': 'F26'
+                },
+
+                {
                     'label': ' Harry Potter ',
                     'value': 'F7'
                 },
-                 {
-                    'label': ' La Plage  ',
-                    'value': 'F8'
+                {
+                    'label': 'On the road',
+                    'value': 'F44'
                 },
                 {
-                    'label': 'Bate\'s Motel ',
-                    'value': 'F9'
-                },
-                {
-                    'label': ' Rain Man  ',
-                    'value': 'F10'
+                    'label': 'Ray',
+                    'value': 'F45'
                 },
                 {
                     'label': ' Les Bronzés',
@@ -108,24 +118,28 @@ export default {
                     'value': 'F12'
                 },
                 {
-                    'label': 'Brokeback mountain',
-                    'value': 'F13'
+                    'label': 'Psychose  ',
+                    'value': 'F29'
                 },
                 {
-                    'label': 'Forest Gum ',
-                    'value': 'F14'
+                    'label': 'Kill Bill  ',
+                    'value': 'F31'
+                },
+                {
+                    'label': 'Brokeback mountain',
+                    'value': 'F13'
                 },
                 {
                     'label': ' La Ligne Verte ',
                     'value': 'F15'
                 },
                 {
-                    'label': 'La Liste de Schindler  ',
-                    'value': 'F16'
-                },
-                {
                     'label': 'The Dark Knight',
                     'value': 'F17'
+                },
+                {
+                    'label': 'Taxi',
+                    'value': 'F4'
                 },
                 {
                     'label': 'Les Evadés ',
@@ -136,19 +150,31 @@ export default {
                     'value': 'F19'
                 },
                 {
+                    'label': 'Drive',
+                    'value': 'F32'
+                },
+                {
+                    'label': 'La Liste de Schindler  ',
+                    'value': 'F16'
+                },
+                {
+                    'label': 'Marie a tout prix',
+                    'value': 'F1'
+                },
+                {
                     'label': 'Blanche Neige ',
                     'value': 'F20'
+                }, 
+                {
+                    'label': 'Bate\'s Motel ',
+                    'value': 'F9'
                 },
                 {
-                    'label': 'Fight Club ',
-                    'value': 'F21'
-                },
-                {
-                    'label': 'Vol au-dessus d\'un Nid de Coucou',
+                    'label': 'Casino',
                     'value': 'F22'
                 },
                 {
-                    'label': 'Il était une fois en Amérique',
+                    'label': 'The help',
                     'value': 'F23'
                 },
                 {
@@ -156,32 +182,17 @@ export default {
                     'value': 'F24'
                 },
                 {
-                    'label': 'Seven',
-                    'value': 'F25'
+                    'label': ' La Plage  ',
+                    'value': 'F8'
                 },
-                {
-                    'label': 'American History X ',
-                    'value': 'F26'
-                },
-                {
-                    'label': 'La vie est belle',
-                    'value': 'F27'
-                },
-                {
-                    'label': 'Retour vers le futur ',
-                    'value': 'F28'
-                },
-                {
-                    'label': 'Psychose  ',
-                    'value': 'F29'
-                },
+                
             ]
         }
     },
     props: ['checkbox'],
     methods: {
         'checkForm' : function() {
-            var goodAnswersList = ['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12'];
+            var goodAnswersList = ['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','F31','F32'];
             var counterGoodAnswer = 0;
             var counterBadAnswer = 0;
 
