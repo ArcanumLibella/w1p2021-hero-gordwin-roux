@@ -25,13 +25,11 @@ body {
 .home {
   background-color: $dark;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-
   color: white;
 
   h1,
@@ -48,7 +46,6 @@ body {
 
   h2 {
     margin-bottom: -10px;
-
     font-size: 6rem;
     color: $blood;
   }
@@ -66,10 +63,8 @@ body {
   display: inline-block;
   padding: 15px 80px;
   cursor: pointer;
-
   border-radius: 5px;
   border: solid 3px $blood;
-
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -85,13 +80,11 @@ body {
 .game {
   background-color: $dark;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-
   color: white;
 
   h2 {
@@ -316,6 +309,7 @@ body {
 }
 
 // QCM
+
  form{
     width: 90%;
     position: absolute;
@@ -326,36 +320,51 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
-    
-}
+    align-content: center;    
 
-input[type="checkbox"] {
+    .Youpla {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    } 
+
+  input[type="checkbox"] {
   position: absolute;
   left: -9999px;
-}
+  }
+
+  
 
   .submit-form{
     display: flex;
-    width: 336px;
+    width: 290px;
     height: 50px;
     margin: 20px;
-    top: 35px;
+    top: 35px; 
     border-radius: 3%;
     /* border: $dark; */
     position: relative;
+    padding: 6px 99px;
     background-color: $dark;
     text-align: center;
     font-family: "Raleway";
-    font-size: 2rem;
-    color: $blood;
-    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 3px $blood;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 30px;
+
+    &:hover {
+      color: $dark;
+      background-color: $blood;
+      } 
   } 
 
   label{
     border-radius: 3%;
-    width: 250px;
-    height: 40px;
+    width: 200px;
+    /* height: 40px; */
     display: flex;
     margin: 25px;
     position: relative;
@@ -370,10 +379,9 @@ input[type="checkbox"] {
     font-family: "Righteous";
     font-size: 1rem;
     text-align: center;
-    color: #ad1a1a;
+    /* color: #ad1a1a; */
     top: 30px;
-    bottom: 5px;
-    
+    bottom: 5px; 
   }
  
   label::before {
@@ -392,8 +400,9 @@ input[type="checkbox"] {
  
   input:checked + label {
     background-color: $blood;
+  }  
 
-label::before {
+ label::before {
   content: "";
   display: flex;
   position: absolute;
@@ -404,12 +413,13 @@ label::before {
   border: 1px solid $blood;
   border-radius: 50px;
   transition: background-color 0.2s;
-}
+ }
 
-   input:checked + label::before {
+  input:checked + label::before {
     background-color: $dark;
   }  
 
+}
 
 
 /*lose*/ 
@@ -443,7 +453,7 @@ label::before {
 
 
 
-.lose__button {
+ .lose__button {
   display: inline-block; 
   padding: 15px 80px;
   margin-top: 20px;
@@ -454,12 +464,12 @@ label::before {
   font-weight: bold;
   text-decoration: none;
   color: $blood;
-
+ 
+ 
   &:hover {
     color: $dark;
     background-color: $blood;
-  }
-}
-}
+  } 
 
+} 
 }
