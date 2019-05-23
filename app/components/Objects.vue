@@ -1,7 +1,7 @@
 <template>
   <div class="game">
     <h2>Choisis 3 objects !</h2>
-    <h3>"Et choisis les bien, ton choix aura une incidence sur la suite du jeu ;)"</h3>
+    <h3>"Et choisis les bien, ton choix aura une incidence sur la suite du jeu..."</h3>
 
     <section class="objects">
       <Object class="object" v-for="(object, index) in objects" v-bind:object="object" :key="index"></Object>

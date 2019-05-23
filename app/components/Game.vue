@@ -19,16 +19,17 @@
 <script>
 import game from "../data";
 import objectService from '../services/objectService';
+import powerService from '../services/powerService';
+
 
 export default {
   data: function() {
     return {
       step: this.getStep(),
-      // cover: this.getStep().image,
     };
   },
   mounted: function() {
-    console.log("coucou");
+    console.log("mounted");
   },
   watch: {
     "$route.params.id"(to, from) {
@@ -42,21 +43,36 @@ export default {
       });
     },
     canDo(action) {
+      // Si l'on a pas besoin d'objet
       console.log(action.object);
       if (!action.object) {
-        console.log("pas d'objet");
+        console.log("Etape sans besoin d'objet");
         return true;
-      } else {
+      } else { // 
+      console.log("Etape avec besoin d'objet")
       const hasObject = objectService.has(action.object);
       return hasObject;
       }
     },
-    doAction() {
-      console.log("ok");
-      if (action.object === "Porte-monnaie") {
-        console.log("il faut un porte-monnaie !");
+    doAction(action) {
+      // console.log("Etape dévérouillée");
+      if (action.object === "Porte-Monnaie") {
+        console.log("Etape dévérouillée !");
       }
     },
+    // superPower(power) {
+    //   console.log(action.power);
+    //   if (!action.power) {
+    //     console.log("Pas besoin de pouvoir");
+    //     return true;
+    //   } else { // 
+    //   console.log("Besoin de pouvoir")
+    //   const hasPower = powerService.has(action.power);
+    //   return hasPower;
+      // if (this.character.name === "Pamela") {
+      //   console.log("Tu as choisi Pamela")
+      // }
+    // }
   }
 };
 </script>

@@ -10,8 +10,6 @@
         v-bind:character="character"
         :key="index"
       >
-        <img v-bind:src="characters.image">
-      </Character>
     </section>
 
     <section>
@@ -25,6 +23,8 @@
 import Character from "./Character.vue";
 import Game from "./Game.vue";
 import characterService from "../services/characterService";
+import powerService from '../services/powerService';
+
 
 export default {
   data: function() {
@@ -32,13 +32,13 @@ export default {
       characters: [
         {
           name: "PAMELA",
-          speciality: "Force surhumaine",
+          power: "Force surhumaine",
           sexe: "Femme",
           image: require("../assets/images/roadtrip2.jpg")
         },
         {
           name: "STAN",
-          speciality: "Charme légendaire",
+          power: "Charme légendaire",
           sexe: "Homme",
           image: require("../assets/images/roadtrip1.jpg")
         }

@@ -18,7 +18,7 @@ export default {
         {
           label: "Tu préfères prendre l'autoroute ?",
           image: require("/assets/images/roadtrip33.jpg"),
-          to: 3,
+          to: 5,
           object: "Porte-monnaie"
         },
         {
@@ -337,7 +337,8 @@ export default {
           label: "Ouf, j'ai une tronçonneuse !",
           image: require("/assets/images/roadtrip38.jpg"),
           to: 21,
-          object: "Tronçonneuse"
+          object: "Tronçonneuse",
+          power: "Force surhumaine"
         },
         {
           label: "Pas de tronçonneuse",
@@ -451,7 +452,8 @@ export default {
           label: "Payer un pot de vin !",
           image: require("/assets/images/roadtrip28.jpg"),
           to: 27,
-          object: "Pot de vin"
+          object: "Pot de vin",
+          power: "Charme légendaire"
         },
         {
           label: "Non",
