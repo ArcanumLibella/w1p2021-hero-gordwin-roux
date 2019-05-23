@@ -67,10 +67,12 @@ export default {
       actions: [
         {
           label: "Oui",
+          image: require("/assets/images/roadtrip23.jpg"),
           to: 9
         },
         {
           label: "Non",
+          image: require("/assets/images/roadtrip37.jpg"),
           to: 8
         }
       ]
@@ -81,10 +83,12 @@ export default {
       actions: [
         {
           label: "Aller chercher de l'essence à pied",
+          image: require("/assets/images/roadtrip52.jpg"),
           to: 801
         },
         {
           label: "Attendre le dépanneur",
+          image: require("/assets/images/roadtrip48.jpg"),
           to: 802
         }
       ]
@@ -106,6 +110,7 @@ export default {
       actions: [
         {
           label: "YOU LOSE",
+          image: require("/assets/images/roadtrip57.gif"),
           to: "/lose/"
         }
       ]
@@ -127,10 +132,12 @@ export default {
       actions: [
         {
           label: "S'arrêter au point de vue ?",
+          image: require("/assets/images/roadtrip50.jpg"),
           to: 1001
         },
         {
           label: "Ou s'arrêter sur le bord de la route ?",
+          image: require("/assets/images/roadtrip45.jpg"),
           to: 1002
         }
       ]
@@ -190,7 +197,7 @@ export default {
         },
         {
           label: "Non",
-          image: require("/assets/images/roadtrip18.png"),
+          image: require("/assets/images/roadtrip59.gif"),
           to: "/lose/"
         }
       ]
@@ -201,13 +208,13 @@ export default {
       actions: [
         {
           label: "Biensûr !",
-          image: require("/assets/images/roadtrip35.png"),
+          image: require("/assets/images/roadtrip53.jpg"),
           to: 16,
           object: "Carambar"
         },
         {
           label: "Désolé, pas cette fois...",
-          image: require("/assets/images/roadtrip35.png"),
+          image: require("/assets/images/roadtrip53.jpg"),
           to: 1301
         }
       ]
@@ -442,6 +449,7 @@ export default {
         },
         {
           label: "Oups, je les ai laissé à la maison...",
+          image: require("/assets/images/roadtrip49.jpg"),
           to: 2501
         }
       ]
@@ -471,7 +479,7 @@ export default {
       actions: [
         {
           label: "YOU LOSE !",
-          image: require("/assets/images/roadtrip28.jpg"),
+          image: require("/assets/images/roadtrip58.jpg"),
           to: "/lose/"
         }
       ]
@@ -504,6 +512,7 @@ export default {
       actions: [
         {
           label: "Ouf, j'ai un crick",
+          image: require("/assets/images/roadtrip46.jpg"),
           to: 2802,
           object: "Crick"
         },
@@ -531,6 +540,7 @@ export default {
       actions: [
         {
           label: "Continuer",
+          image: require("/assets/images/roadtrip51.jpg"),
           to: 29
         }
       ]
@@ -552,6 +562,7 @@ export default {
       actions: [
         {
           label: "On va voir si tu as été observateur durant cette aventure !",
+          image: require("/assets/images/roadtrip47.jpg"),
           to: "/Qcm"
         }
       ]

@@ -1,6 +1,6 @@
 <template>
   <div class="game">
-    <h2>Choisis 3 objects !</h2>
+    <h2>Choisis 3 objets !</h2>
     <h3>"Et choisis les bien, ton choix aura une incidence sur la suite du jeu..."</h3>
 
     <section class="objects">
