@@ -96,7 +96,7 @@ export default {
         {
           label: "YOU LOSE",
           image: require("/assets/images/roadtrip5.png"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -106,7 +106,7 @@ export default {
       actions: [
         {
           label: "YOU LOSE",
-          to: "/"
+          to:"/lose/"
         }
       ]
     },
@@ -191,7 +191,7 @@ export default {
         {
           label: "Non",
           image: require("/assets/images/roadtrip18.png"),
-          to: 12
+          to: "/lose/"
         }
       ]
     },
@@ -218,7 +218,7 @@ export default {
       actions: [
         {
           label: "YOU LOSE",
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -282,7 +282,7 @@ export default {
         {
           label: "YOU LOSE",
           image: require("/assets/images/roadtrip20.png"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -325,7 +325,7 @@ export default {
         {
           label: "YOU LOSE",
           image: require("/assets/images/roadtrip4.jpg"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -354,7 +354,7 @@ export default {
         {
           label: "YOU LOSE",
           image: require("/assets/images/roadtrip19.png"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -414,7 +414,7 @@ export default {
         {
           label: "YOU LOSE",
           image: require("/assets/images/roadtrip32.jpg"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -469,7 +469,7 @@ export default {
         {
           label: "YOU LOSE !",
           image: require("/assets/images/roadtrip28.jpg"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -518,7 +518,7 @@ export default {
         {
           label: "YOU LOSE",
           image: require("/assets/images/roadtrip7.jpg"),
-          to: "/"
+          to: "/lose/"
         }
       ]
     },
@@ -549,20 +549,21 @@ export default {
       actions: [
         {
           label: "On va voir si tu as été observateur...",
-          to: 31
+          to: "/Qcm"
+      
         }
       ]
-    },
-    {
+    }
+   /*  {
       id: 31,
       title: "Questions...",
       actions: [
         {
           label: "...",
-          to: 31
-        }
+          to: 
+        } 
       ]
-    }
+    }*/
     // {
     //   id: 000,
     //   title: "YOU LOSE !",
