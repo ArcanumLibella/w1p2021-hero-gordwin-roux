@@ -63,7 +63,7 @@ export default {
     },
     {
       id: 7,
-      title: "Veux tu prendre de l'essence ?",
+      title: "Veux-tu prendre de l'essence ?",
       actions: [
         {
           label: "Oui",
@@ -123,7 +123,7 @@ export default {
     },
     {
       id: 10,
-      title: "Il serait peut être temps de faire une pause...",
+      title: "Il serait peut-être temps de faire une pause...",
       actions: [
         {
           label: "S'arrêter au point de vue ?",
@@ -181,7 +181,7 @@ export default {
     },
     {
       id: 12,
-      title: "Veux tu prendre cet autostoppeur ?",
+      title: "Veux-tu prendre cet autostoppeur ?",
       actions: [
         {
           label: "Oui",
@@ -197,10 +197,10 @@ export default {
     },
     {
       id: 13,
-      title: "Il te demande si tu aurais pas un carambar sur toi...",
+      title: "Il te demande si tu as un carambar sur toi...",
       actions: [
         {
-          label: "Biensûr !",
+          label: "Bien sûr !",
           image: require("/assets/images/roadtrip35.png"),
           to: 16,
           object: "Carambar"
@@ -234,7 +234,7 @@ export default {
     // },
     {
       id: 16,
-      title: "Tu commences à être fatigué(e)",
+      title: "Tu commences à être fatigué-e",
       actions: [
         {
           label: "Je peux tenir encore un peu...",
@@ -254,7 +254,7 @@ export default {
       actions: [
         {
           label:
-            "Assassiné(e) dans ton sommeil, le garçon de l'accueil était vraiment étrange",
+            "Assassiné-e dans ton sommeil, le garçon de l'accueil était vraiment étrange",
           image: require("/assets/images/roadtrip26.gif"),
           to: "/lose/"
         }
@@ -441,14 +441,14 @@ export default {
           object: "Papiers du véhicule"
         },
         {
-          label: "Oups, je les ai laissé à la maison...",
+          label: "Oups, je les ai laissés à la maison...",
           to: 2501
         }
       ]
     },
     {
       id: 2501,
-      title: "Peut être pouvons nous faire un réglement à l'amiable ?",
+      title: "Nous pouvons, peut-être, faire un réglement à l'amiable ?",
       actions: [
         {
           label: "Payer un pot de vin",
@@ -458,7 +458,7 @@ export default {
           power: "Charme légendaire"
         },
         {
-          label: "Ce n'est pas mon genre bande de ripoux !",
+          label: "Ce n'est pas mon genre! bande de ripoux !",
           image: require("/assets/images/roadtrip28.jpg"),
           to: 25012
         }
@@ -508,7 +508,7 @@ export default {
           object: "Crick"
         },
         {
-          label: "Je savais que j'aurais du le prendre !",
+          label: "Je savais que j'aurais dû le prendre !",
           image: require("/assets/images/roadtrip7.jpg"),
           to: 2801
         }
@@ -527,7 +527,7 @@ export default {
     },
     {
       id: 2802,
-      title: "Vous êtes suréquipé(e) !",
+      title: "Vous êtes suréquipé-e !",
       actions: [
         {
           label: "Continuer",

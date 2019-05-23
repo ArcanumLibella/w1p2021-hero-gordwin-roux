@@ -1,11 +1,10 @@
 <template>
   <transition name="scale">
-    <article class="character" :class="{'character--main': character.main}">
+    <article class="character" :class="{'character--main': character.main}" ref="characterItem" @click="choose">
       <h4>{{ character.name }}</h4>
       <p>{{ character.power }}</p>
       <p>{{ character.sexe }}</p>
       <img v-bind:src="character.image">
-      <button class="character__button" @click="choose">CHOISIR {{ character.name }}</button>
     </article>
   </transition>
 </template>
@@ -28,9 +27,9 @@ export default {
   },
   methods: {
     choose() {
-      console.log(this.character.name);
+      console.log(this.character.name, this.character, );
+      this.$refs.characterItem.classList.toggle('active');
       characterService.set(this.character.name);
-
       characterService.add(this.character.name);
     }
   }
