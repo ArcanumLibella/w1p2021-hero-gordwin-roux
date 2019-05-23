@@ -31,42 +31,50 @@
 </template>
 
 <script>
-  import game from "../data";
-  import objectService from '../services/objectService';
+import game from "../data";
+import objectService from '../services/objectService';
+import powerService from '../services/powerService';
 
-  export default {
-    data: function() {
-      return {
-        audio: null,
-        audioToggle: null,
-        step: this.getStep(),
-        // cover: this.getStep().image,
-      };
+
+export default {
+  data: function() {
+    return {
+      step: this.getStep(),
+    };
+  },
+  mounted: function() {
+    console.log("mounted");
+  },
+  watch: {
+    "$route.params.id"(to, from) {
+      this.step = this.getStep();
+    }
+  },
+  methods: {
+    getStep() {
+      return game.steps.find(step => {
+        return step.id === parseInt(this.$route.params.id);
+      });
     },
-    mounted: function() {
-      console.log("coucou");
-    },
-    watch: {
-      "$route.params.id"(to, from) {
-        this.step = this.getStep();
+    canDo(action) {
+      // Si l'on a pas besoin d'objet
+      console.log(action.object);
+      if (!action.object) {
+        console.log("Etape sans besoin d'objet");
+        return true;
+      } else { // 
+      console.log("Etape avec besoin d'objet")
+      const hasObject = objectService.has(action.object);
+      return hasObject;
       }
     },
-    methods: {
-      getStep() {
-        return game.steps.find(step => {
-          return step.id === parseInt(this.$route.params.id);
-        });
-      },
-      canDo(action) {
-        console.log(action.object);
-        if (!action.object) {
-          console.log("pas d'objet");
-          return true;
-        } else {
-          const hasObject = objectService.has(action.object);
-          return hasObject;
-        }
-      },
+    doAction(action) {
+      // console.log("Etape dévérouillée");
+      if (action.object === "Porte-Monnaie") {
+        console.log("Etape dévérouillée !");
+      }
+      
+    },
       toggleMute() {
         var audio = this.$refs['audio'];
         var audioToggle = this.$refs['audioToggle'];
@@ -77,13 +85,20 @@
           audio.pause();
           audioToggle.classList.add('pause');
         }
-      },
-      doAction() {
-        console.log("ok");
-        if (action.object === "Porte-monnaie") {
-          console.log("il faut un porte-monnaie !");
         }
-      }
-    }
-  };
-</script> 
+    // superPower(power) {
+    //   console.log(action.power);
+    //   if (!action.power) {
+    //     console.log("Pas besoin de pouvoir");
+    //     return true;
+    //   } else { // 
+    //   console.log("Besoin de pouvoir")
+    //   const hasPower = powerService.has(action.power);
+    //   return hasPower;
+      // if (this.character.name === "Pamela") {
+      //   console.log("Tu as choisi Pamela")
+      // }
+    // }
+  }
+};
+</script>

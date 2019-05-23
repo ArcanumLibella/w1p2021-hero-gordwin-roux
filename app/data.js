@@ -2,7 +2,7 @@ export default {
   steps: [
     {
       id: 0,
-      title: "Bienvenue voyageur",
+      title: "C'est parti pour une grande aventure !",
       actions: [
         {
           label: "Commencer",
@@ -13,12 +13,12 @@ export default {
     },
     {
       id: 3,
-      title: "C'est parti !!!",
+      title: "Quel cruel dilemme...",
       actions: [
         {
           label: "Tu préfères prendre l'autoroute ?",
           image: require("/assets/images/roadtrip33.jpg"),
-          to: 3,
+          to: 5,
           object: "Porte-monnaie"
         },
         {
@@ -30,7 +30,7 @@ export default {
     },
     {
       id: 5,
-      title: "Paysage 1",
+      title: "Quel beau paysage !",
       actions: [
         {
           label: "Continuer",
@@ -41,7 +41,7 @@ export default {
     },
     {
       id: 6,
-      title: "Renverser un animal",
+      title: "Oh ! Tu as renversé un animal !",
       actions: [
         {
           label: "Continuer",
@@ -52,7 +52,7 @@ export default {
     },
     {
       id: 601,
-      title: "C'était la mère de bambi !",
+      title: "C'était la mère de bambi :( !",
       actions: [
         {
           label: "Continuer",
@@ -63,7 +63,7 @@ export default {
     },
     {
       id: 7,
-      title: "Essence ?",
+      title: "Veux tu prendre de l'essence ?",
       actions: [
         {
           label: "Oui",
@@ -77,7 +77,7 @@ export default {
     },
     {
       id: 8,
-      title: "Tomber en panne",
+      title: "EN PANNE ! Faut pas t'étonner !",
       actions: [
         {
           label: "Aller chercher de l'essence à pied",
@@ -91,7 +91,7 @@ export default {
     },
     {
       id: 801,
-      title: "Manger par les loups",
+      title: "Mauvaise idée de trainer seul dans les bois...",
       actions: [
         {
           label: "YOU LOSE",
@@ -102,7 +102,7 @@ export default {
     },
     {
       id: 802,
-      title: "Le temps c'est de l'argent",
+      title: "Hey ! Le temps c'est de l'argent !",
       actions: [
         {
           label: "YOU LOSE",
@@ -123,14 +123,14 @@ export default {
     },
     {
       id: 10,
-      title: "Il serait temps de faire une pause",
+      title: "Il serait peut être temps de faire une pause...",
       actions: [
         {
-          label: "Point de vue",
+          label: "S'arrêter au point de vue ?",
           to: 1001
         },
         {
-          label: "Tu préfères t'arrêter sur le bord de la route",
+          label: "Ou s'arrêter sur le bord de la route ?",
           to: 1002
         }
       ]
@@ -140,7 +140,7 @@ export default {
       title: "Quel magnifique point de vue !",
       actions: [
         {
-          label: "On t'interpèle...",
+          label: "Un groupe t'interpèle !",
           image: require("/assets/images/roadtrip12.jpg"),
           to: 10011
         }
@@ -159,7 +159,7 @@ export default {
     },
     {
       id: 10011,
-      title: "Les bronzés",
+      title: "Bla bla bla... ces touristes alors !",
       actions: [
         {
           label: "Continuer",
@@ -181,7 +181,7 @@ export default {
     },
     {
       id: 12,
-      title: "Autostoppeur",
+      title: "Veux tu prendre cet autostoppeur ?",
       actions: [
         {
           label: "Oui",
@@ -191,22 +191,22 @@ export default {
         {
           label: "Non",
           image: require("/assets/images/roadtrip18.png"),
-          to: 14
+          to: 12
         }
       ]
     },
     {
       id: 13,
-      title: "As tu un carambar ?",
+      title: "Il te demande si tu aurais pas un carambar sur toi...",
       actions: [
         {
-          label: "Oui",
+          label: "Biensûr !",
           image: require("/assets/images/roadtrip35.png"),
           to: 16,
           object: "Carambar"
         },
         {
-          label: "Non",
+          label: "Désolé, pas cette fois...",
           image: require("/assets/images/roadtrip35.png"),
           to: 1301
         }
@@ -234,15 +234,15 @@ export default {
     },
     {
       id: 16,
-      title: "Tu es fatigué",
+      title: "Tu commences à être fatigué(e)",
       actions: [
         {
-          label: "Attendre un peu",
+          label: "Je peux tenir encore un peu...",
           image: require("/assets/images/roadtrip30.jpg"),
           to: 17
         },
         {
-          label: "Se reposer dans ce motel",
+          label: "Ce motel a l'air plutôt cosy !",
           image: require("/assets/images/roadtrip26.gif"),
           to: 1601
         }
@@ -337,7 +337,8 @@ export default {
           label: "Ouf, j'ai une tronçonneuse !",
           image: require("/assets/images/roadtrip38.jpg"),
           to: 21,
-          object: "Tronçonneuse"
+          object: "Tronçonneuse",
+          power: "Force surhumaine"
         },
         {
           label: "Pas de tronçonneuse",
@@ -451,7 +452,8 @@ export default {
           label: "Payer un pot de vin !",
           image: require("/assets/images/roadtrip28.jpg"),
           to: 27,
-          object: "Pot de vin"
+          object: "Pot de vin",
+          power: "Charme légendaire"
         },
         {
           label: "Non",

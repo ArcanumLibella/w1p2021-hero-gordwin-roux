@@ -55,41 +55,6 @@ const router = new Router({
       name: "qcm",
       component: Qcm
     },
-    // {
-    //   path: "/ouAller",
-    //   name: "ouAller",
-    //   component: OuAller
-    // },
-    // {
-    //   path: "/chemintranquille",
-    //   name: "chemintranquille",
-    //   component: Tranquille
-    // },
-    // {
-    //   path: "/chemindangereux",
-    //   name: "chemindangereux",
-    //   component: Dangereux
-    // },
-    // {
-    //   path: "/piegemortel",
-    //   name: "piegemortel",
-    //   component: PiegeMortel
-    // },
-    // {
-    //   path: "/page",
-    //   name: "page",
-    //   component: Page
-    // },
-    // {
-    //   path: "/object",
-    //   name: "object",
-    //   component: Objet
-    // },
-    // {
-    //   path: "/step3",
-    //   name: "step3",
-    //   component: Step3
-    // },
     {
       // à laisser en dernier
       path: "*",

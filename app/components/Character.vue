@@ -2,9 +2,9 @@
   <transition name="scale">
     <article class="character" :class="{'character--main': character.main}">
       <h4>{{ character.name }}</h4>
-      <p>{{ character.speciality }}</p>
+      <p>{{ character.power }}</p>
       <p>{{ character.sexe }}</p>
-
+      <img v-bind:src="character.image">
       <button class="character__button" @click="choose">CHOISIR {{ character.name }}</button>
     </article>
   </transition>
@@ -12,6 +12,7 @@
 
 <script>
 import characterService from "../services/characterService";
+import powerService from "../services/powerService";
 
 export default {
   props: ["character"],
@@ -29,6 +30,8 @@ export default {
     choose() {
       console.log(this.character.name);
       characterService.set(this.character.name);
+
+      characterService.add(this.character.name);
     }
   }
 };

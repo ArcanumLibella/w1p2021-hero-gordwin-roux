@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// import characterService from "../services/characterService";
 import objectService from "../services/objectService";
 
 export default {

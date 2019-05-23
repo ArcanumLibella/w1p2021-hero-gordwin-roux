@@ -36,14 +36,13 @@ body {
 
   h1,
   h2 {
-    width: 800px;
+    width: 600px;
     font-family: "Righteous";
     text-align: center;
   }
 
   h1 {
     margin-bottom: 50px;
-
     font-size: 8rem;
   }
 
@@ -56,9 +55,9 @@ body {
 
   h3 {
     margin-bottom: 30px;
-
+    font-family: "Righteous";
     font-size: 2rem;
-    font-style: italic;
+    // font-style: italic;
     color: $beige;
   }
 }
@@ -101,6 +100,14 @@ body {
     font-size: 3rem;
     text-align: center;
     color: $blood;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+    font-family: "Righteous";
+    font-size: 1rem;
+    text-align: center;
+    color: $beige;
   }
 
   h4 {
@@ -229,7 +236,7 @@ body {
 .objects {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 
   h2 {
@@ -263,9 +270,9 @@ body {
 
 
 .object {
-  width: 250px;
+  width: 200px;
   height: 40px;
-  margin: 25px;
+  margin: 10px;
   padding: 15px;
   text-align: center;
   border-radius: 3%;
@@ -323,10 +330,10 @@ body {
     
 }
 
- input[type="checkbox"]{
-  position: absolute; 
+input[type="checkbox"] {
+  position: absolute;
   left: -9999px;
-} 
+}
 
   .submit-form{
     display: flex;
@@ -386,7 +393,18 @@ body {
   input:checked + label {
     background-color: $blood;
 
-  }
+label::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 10px;
+  width: 30px;
+  border: 1px solid $blood;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+}
 
    input:checked + label::before {
     background-color: $dark;
@@ -415,8 +433,7 @@ body {
   }
 
   h1
-  { 
-    
+  {  
     width: 800px;
     font-family: "Righteous";
     text-align: center;
@@ -443,7 +460,6 @@ body {
     background-color: $blood;
   }
 }
- 
-
+}
 
 }
