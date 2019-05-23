@@ -1,9 +1,8 @@
 <template>
-  <div class="big-header">
-    <h1>{{ message }} - {{ character }}</h1>
-    <h2>Tu as gagné</h2>
-    <br>
-    <br>
+  <div class="home">
+    <h1> YOU WON </h1>
+    <h2> </h2>
+    <router-link class="home__button" to="/characters">PLAY AGAIN</router-link>
   </div>
 </template>
 
