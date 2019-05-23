@@ -106,7 +106,7 @@ export default {
       actions: [
         {
           label: "YOU LOSE",
-          to:"/lose/"
+          to: "/lose/"
         }
       ]
     },
@@ -222,16 +222,16 @@ export default {
         }
       ]
     },
-    {
-      id: 14,
-      title: "C'est pas cool + calcul",
-      actions: [
-        {
-          label: "Validation du calcul",
-          to: 1401
-        }
-      ]
-    },
+    // {
+    //   id: 14,
+    //   title: "C'est pas cool + calcul",
+    //   actions: [
+    //     {
+    //       label: "Validation du calcul",
+    //       to: 1401
+    //     }
+    //   ]
+    // },
     {
       id: 16,
       title: "Tu commences à être fatigué(e)",
@@ -253,18 +253,19 @@ export default {
       title: "MOTEL",
       actions: [
         {
-          label: "Pénalité de temps",
+          label:
+            "Assassiné(e) dans ton sommeil, le garçon de l'accueil était vraiment étrange",
           image: require("/assets/images/roadtrip26.gif"),
-          to: 19
+          to: "/lose/"
         }
       ]
     },
     {
       id: 17,
-      title: "Belle forêt",
+      title: "Et si je campais plutôt dans la forêt ?",
       actions: [
         {
-          label: "Attendre un peu",
+          label: "Attendre encore un peu...",
           image: require("/assets/images/roadtrip30.jpg"),
           to: 18
         },
@@ -288,7 +289,8 @@ export default {
     },
     {
       id: 18,
-      title: "Magnifique plage",
+      title:
+        "Ahh j'ai bien fait d'attendre pour dormir ! Cette plage est magnifique !",
       actions: [
         {
           label: "Continuer",
@@ -312,7 +314,7 @@ export default {
           object: "GPS"
         },
         {
-          label: "Vieux chelou",
+          label: "Et si je demandais la route à ce vieux monsieur ?",
           image: require("/assets/images/roadtrip34.jpg"),
           to: 20
         }
@@ -320,7 +322,7 @@ export default {
     },
     {
       id: 1903,
-      title: "Chute falaise",
+      title: "Ne jamais se fier à un GPS !",
       actions: [
         {
           label: "YOU LOSE",
@@ -331,17 +333,17 @@ export default {
     },
     {
       id: 1901,
-      title: "Tronc d'arbre",
+      title: "Cette route n'était pas si sûre...",
       actions: [
         {
-          label: "Ouf, j'ai une tronçonneuse !",
+          label: "Ouf, j'ai toujours une tronçonneuse avec moi !",
           image: require("/assets/images/roadtrip38.jpg"),
           to: 21,
           object: "Tronçonneuse",
           power: "Force surhumaine"
         },
         {
-          label: "Pas de tronçonneuse",
+          label: "Pas de tronçonneuse...",
           image: require("/assets/images/roadtrip19.png"),
           to: 19011
         }
@@ -349,7 +351,7 @@ export default {
     },
     {
       id: 19011,
-      title: "Dommage pour toi",
+      title: "Dommage pour toi !",
       actions: [
         {
           label: "YOU LOSE",
@@ -360,10 +362,10 @@ export default {
     },
     {
       id: 20,
-      title: "Raccourcie",
+      title: "Heureusement qu'il était là !",
       actions: [
         {
-          label: "Heureusement qu'il était là !",
+          label: "Continuer",
           image: require("/assets/images/roadtrip34.jpg"),
           to: 21
         }
@@ -371,10 +373,10 @@ export default {
     },
     {
       id: 21,
-      title: "Montagne",
+      title: "Passons par la montagne !",
       actions: [
         {
-          label: "Transhumance",
+          label: "C'est la transhumance !",
           image: require("/assets/images/roadtrip21.jpg"),
           to: 22
         }
@@ -382,7 +384,7 @@ export default {
     },
     {
       id: 22,
-      title: "Bouchon moutons",
+      title: "Il y a comme un embouteillage...",
       actions: [
         {
           label: "Continuer",
@@ -396,12 +398,12 @@ export default {
       title: "Aire de pique-nique",
       actions: [
         {
-          label: "Petite pause gouter",
+          label: "Une petite pause goûter...et on reprend la route !",
           image: require("/assets/images/roadtrip40.jpeg"),
           to: 24
         },
         {
-          label: "Ca a l'air plutôt joli par là !",
+          label: "Ça a l'air plutôt joli par ici !",
           image: require("/assets/images/roadtrip39.jpeg"),
           to: 2301
         }
@@ -420,10 +422,10 @@ export default {
     },
     {
       id: 24,
-      title: "Flics",
+      title: "Contrôle de police !",
       actions: [
         {
-          label: "Contrôle papiers du véhicule",
+          label: "Papiers du véhicule !",
           image: require("/assets/images/roadtrip25.jpg"),
           to: 25
         }
@@ -431,32 +433,32 @@ export default {
     },
     {
       id: 25,
-      title: "Flics",
+      title: "Contrôle de police !",
       actions: [
         {
-          label: "Oui je les ai pris !",
+          label: "Oui j'ai toujours mes papiers sur moi !",
           to: 27,
           object: "Papiers du véhicule"
         },
         {
-          label: "Non",
+          label: "Oups, je les ai laissé à la maison...",
           to: 2501
         }
       ]
     },
     {
       id: 2501,
-      title: "Réglement à l'amiable",
+      title: "Peut être pouvons nous faire un réglement à l'amiable ?",
       actions: [
         {
-          label: "Payer un pot de vin !",
+          label: "Payer un pot de vin",
           image: require("/assets/images/roadtrip28.jpg"),
           to: 27,
           object: "Pot de vin",
           power: "Charme légendaire"
         },
         {
-          label: "Non",
+          label: "Ce n'est pas mon genre bande de ripoux !",
           image: require("/assets/images/roadtrip28.jpg"),
           to: 25012
         }
@@ -464,7 +466,8 @@ export default {
     },
     {
       id: 25012,
-      title: "Toujours prévoir un pot de vin",
+      title:
+        "Nous allons être dans l'obligation d'immobiliser votre véhicule !",
       actions: [
         {
           label: "YOU LOSE !",
@@ -475,7 +478,7 @@ export default {
     },
     {
       id: 26,
-      title: "Ca sert toujours d'avoir un pot de vin",
+      title: "Ça sert toujours d'avoir le bras long...",
       actions: [
         {
           label: "Continuer",
@@ -486,7 +489,7 @@ export default {
     },
     {
       id: 27,
-      title: "Beau paysage",
+      title: "Quel beau paysage !",
       actions: [
         {
           label: "Continuer",
@@ -497,15 +500,15 @@ export default {
     },
     {
       id: 28,
-      title: "Pneu crevé",
+      title: "Pneu crevé ! Il ne manquait plus que ça !!!",
       actions: [
         {
-          label: "Ouf j'ai un crick",
+          label: "Ouf, j'ai un crick",
           to: 2802,
           object: "Crick"
         },
         {
-          label: "Pas de crick",
+          label: "Je savais que j'aurais du le prendre !",
           image: require("/assets/images/roadtrip7.jpg"),
           to: 2801
         }
@@ -513,7 +516,7 @@ export default {
     },
     {
       id: 2801,
-      title: "Vous n'êtes pas équipé",
+      title: "Vous n'êtes pas équipé !",
       actions: [
         {
           label: "YOU LOSE",
@@ -524,7 +527,7 @@ export default {
     },
     {
       id: 2802,
-      title: "Vous êtes suréquipé !",
+      title: "Vous êtes suréquipé(e) !",
       actions: [
         {
           label: "Continuer",
@@ -534,7 +537,7 @@ export default {
     },
     {
       id: 29,
-      title: "Paysage sans indice",
+      title: "Quel endroit paisible !",
       actions: [
         {
           label: "Continuer",
@@ -545,16 +548,15 @@ export default {
     },
     {
       id: 30,
-      title: "QUESTIONNAIRE",
+      title: "QUIZ CINÉMATOGRAPHIQUE",
       actions: [
         {
-          label: "On va voir si tu as été observateur...",
+          label: "On va voir si tu as été observateur durant cette aventure !",
           to: "/Qcm"
-      
         }
       ]
     }
-   /*  {
+    /*  {
       id: 31,
       title: "Questions...",
       actions: [
