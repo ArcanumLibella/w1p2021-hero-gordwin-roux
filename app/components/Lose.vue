@@ -1,11 +1,22 @@
 <template>
-  <div class="home">
+  <div class="lose">
+    <video autoplay loop class ="video">
+    <source 
+    src="../assets/video/badroad.mp4"> 
+    </video>
+
     <h1>YOU LOSE</h1>
     <h2>   </h2>
-    <router-link class="home__button" to="/characters">RESTART</router-link>
+    <router-link class="lose__button" to="/characters">RESTART</router-link>  
+    
   
-  </div>
+  </div> 
 </template>
+
+
+
+
+
 
 <script>
 import countService from "../services/countService";

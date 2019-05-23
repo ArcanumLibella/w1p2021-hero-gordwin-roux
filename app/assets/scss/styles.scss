@@ -155,6 +155,32 @@ body {
   }
 }
 
+.audio{
+  display: none;
+}
+
+.audio-mute {
+  position: fixed;
+  display: inline-block;
+  background: $dark;
+  border: solid 1px $blood;
+  border-radius: 18%;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  padding-top: 19px;
+  
+  &.pause {
+    background:$blood;
+    border: solid 1px $beige;
+    color: $dark;
+    
+  }
+}
+
 .character__button {
   display: block;
   margin: 15px auto;
@@ -198,6 +224,7 @@ body {
   }
 }
 
+
 // OBJECTS
 .objects {
   display: flex;
@@ -233,6 +260,7 @@ body {
     margin-top: 0px;
   }
 }
+
 
 .object {
   width: 250px;
@@ -282,7 +310,7 @@ body {
 
 // QCM
  form{
-    width: 100%;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -292,6 +320,7 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    
 }
 
  input[type="checkbox"]{
@@ -299,37 +328,58 @@ body {
   left: -9999px;
 } 
 
-  input.submit-form {
-    height: 50px;
-    width: 250px;
+  .submit-form{
     display: flex;
-  }
+    width: 336px;
+    height: 50px;
+    margin: 20px;
+    top: 35px;
+    border-radius: 3%;
+    /* border: $dark; */
+    position: relative;
+    background-color: $dark;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 2rem;
+    color: $blood;
+    text-align: center;
+  } 
 
   label{
-    display: flex;
-    margin: 20px;
-    position: relative;
-    padding: 0px 18px 8px 70px;
     border-radius: 3%;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    margin: 25px;
+    position: relative;
+    padding: 5px 18px 8px 70px;
     background-color: $beige;
     color: $dark;
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
     transition: background-color .2s, box-shadow .2s;
-    font-size: 2rem;
+    margin-bottom: 5px;
+    font-family: "Righteous";
+    font-size: 1rem;
+    text-align: center;
+    color: #ad1a1a;
+    top: 30px;
+    bottom: 5px;
+    
   }
  
   label::before {
     content: '';
     display: flex;
     position: absolute;
-    top: 5px;
+    top: 8px;
     bottom: 5px;
     left: 10px;
-    width: 30px;
-    border: 1px solid $blood;
-    border-radius: 50px;
+    width: 10px;
+    height: 10px ; 
+    border: 9px solid $dark;
+    border-radius: 50px; 
     transition: background-color .2s;
   }
  
@@ -338,6 +388,62 @@ body {
 
   }
 
-  input:checked + label::before {
-    background-color: white;
+   input:checked + label::before {
+    background-color: $dark;
+  }  
+
+
+
+/*lose*/ 
+
+.lose {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  color: white; 
+
+  .video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
   }
+
+  h1
+  { 
+    
+    width: 800px;
+    font-family: "Righteous";
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 8rem;
+  }
+
+
+
+.lose__button {
+  display: inline-block; 
+  padding: 15px 80px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 3px $blood;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: $blood;
+
+  &:hover {
+    color: $dark;
+    background-color: $blood;
+  }
+}
+ 
+
+
+}

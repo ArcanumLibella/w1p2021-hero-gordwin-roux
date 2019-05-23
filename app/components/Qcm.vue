@@ -18,11 +18,11 @@
     </label>
 </div>
 
-<!--compteur externe à virer en prod -->
+<!--compteur externe à virer en prod
 <div class="">
     {{ checkboxTest }}
 </div>
-
+ -->
 
 <input type="checkbox" name="choix" value="1" >
 <input class="submit-form" type="submit" value="Submit">

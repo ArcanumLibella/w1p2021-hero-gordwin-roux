@@ -1,6 +1,12 @@
 <template>
-  <div class="home">
-    <h1> YOU WON </h1>
+  <div class="lose">
+
+  <video autoplay loop class ="video">
+    <source 
+    src="../assets/video/winroad.mp4"> 
+    </video>
+
+    <h1> YOU WIN </h1>
     <h2> </h2>
     <router-link class="home__button" to="/characters">PLAY AGAIN</router-link>
   </div>
@@ -23,4 +29,4 @@ export default {
     }
   }
 };
-</script>
+</script> 
