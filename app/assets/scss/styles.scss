@@ -119,12 +119,24 @@ body {
     color: $blood;
   }
 
+  .button__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 60px;
+    background-color: $blood;
+    border-radius: 10px;
+  }
+
   a {
+    width: 100%;
     margin-bottom: 10px;
+    padding: 15px 10px;
     font-family: "Righteous";
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    color: $blood;
+    color: $beige;
   }
 
   img {
@@ -134,24 +146,31 @@ body {
   }
 }
 
-.game__button {
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 80px;
-  cursor: pointer;
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 800px;
 
-  border-radius: 5px;
-  border: solid 3px $blood;
+  .game__button {
+    display: inline-block;
+    width: 300px;
+    margin: 8px 30px;
+    padding: 15px 80px;
+    cursor: pointer;
 
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  color: $blood;
+    border-radius: 5px;
+    border: solid 3px $blood;
 
-  &:hover {
-    color: $dark;
-    background-color: $blood;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: $blood;
+
+    &:hover {
+      color: $dark;
+      background-color: $blood;
+    }
   }
 }
 
@@ -197,7 +216,6 @@ body {
   &:hover {
     color: $blood;
   }
-  
 }
 
 // CARDS
@@ -208,8 +226,8 @@ body {
 }
 
 .card {
-  width: 450px;
-  height: 500px;
+  width: 400px;
+  height: 450px;
   margin: 25px;
   padding: 15px;
   text-align: center;
@@ -220,16 +238,17 @@ body {
   // background-size: cover;
   color: $dark;
 
-  &:active {
-    color: $blood;
+  &.active {
+    transform: scale3d(1.05, 1.05, 1.05);
+    border: solid 5px $blood;
   }
 
   &.character {
     cursor: pointer;
-    transform: scale3d(1,1,1);
+    transform: scale3d(1, 1, 1);
     transition: 250ms linear transform;
     &.active {
-      transform: scale3d(1.05,1.05,1.05)
+      transform: scale3d(1.05, 1.05, 1.05);
     }
   }
 }
@@ -325,12 +344,13 @@ form {
   .Youpla {
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   input[type="checkbox"] {
+    display: none;
     position: absolute;
-    left: -9999px;
+    // left: -9999px;
   }
 
   .submit-form {
@@ -352,6 +372,7 @@ form {
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 30px;
+    color: $blood;
 
     &:hover {
       color: $dark;
@@ -364,7 +385,7 @@ form {
     width: 200px;
     /* height: 40px; */
     display: flex;
-    margin: 25px;
+    margin: 15px;
     position: relative;
     padding: 5px 18px 8px 70px;
     background-color: $beige;

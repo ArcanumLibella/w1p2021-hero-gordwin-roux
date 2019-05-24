@@ -3,8 +3,9 @@
     <h2>VERY BAD</h2>
     <h1>ROADTRIP</h1>
     <h3>On the road again !</h3>
-
-    <router-link class="home__button" to="/characters">START</router-link>
+    <section class="buttons">
+      <router-link class="home__button" to="/characters">START</router-link>
+    </section>
   </div>
 </template>
 

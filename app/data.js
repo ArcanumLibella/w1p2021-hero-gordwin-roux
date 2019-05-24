@@ -208,7 +208,7 @@ export default {
       actions: [
         {
           label: "Bien sûr !",
-          image: require("/assets/images/roadtrip35.png"),
+          image: require("/assets/images/roadtrip53.jpg"),
           to: 16,
           object: "Carambar"
         },
@@ -318,6 +318,7 @@ export default {
         {
           label: "Non merci, j'ai un GPS",
           to: 1903,
+          image: require("/assets/images/roadtrip61.jpg"),
           object: "GPS"
         },
         {
@@ -445,10 +446,12 @@ export default {
         {
           label: "Oui j'ai toujours mes papiers sur moi !",
           to: 27,
+          image: require("/assets/images/roadtrip62.jpg"),
           object: "Papiers du véhicule"
         },
         {
           label: "Oups, je les ai laissés à la maison...",
+          image: require("/assets/images/roadtrip49.jpg"),
           to: 2501
         }
       ]
