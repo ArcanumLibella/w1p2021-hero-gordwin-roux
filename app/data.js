@@ -52,7 +52,7 @@ export default {
     },
     {
       id: 601,
-      title: "C'était la mère de bambi :( !",
+      title: "C'était la maman de Bambi :( !",
       actions: [
         {
           label: "Continuer",
@@ -95,7 +95,7 @@ export default {
     },
     {
       id: 801,
-      title: "Mauvaise idée de trainer seul dans les bois...",
+      title: "Mauvaise idée de trainer seul(e) dans les bois...",
       actions: [
         {
           label: "YOU LOSE",
@@ -136,7 +136,7 @@ export default {
           to: 1001
         },
         {
-          label: "Ou s'arrêter sur le bord de la route ?",
+          label: "S'arrêter sur le bord de la route ?",
           image: require("/assets/images/roadtrip45.jpg"),
           to: 1002
         }
@@ -241,7 +241,7 @@ export default {
     // },
     {
       id: 16,
-      title: "Tu commences à être fatigué-e",
+      title: "Tu commences à être fatigué(e)",
       actions: [
         {
           label: "Je peux tenir encore un peu...",
@@ -261,7 +261,7 @@ export default {
       actions: [
         {
           label:
-            "Assassiné-e dans ton sommeil, le garçon de l'accueil était vraiment étrange",
+            "Assassiné(e) dans ton sommeil, le garçon de l'accueil était vraiment suspect...",
           image: require("/assets/images/roadtrip26.gif"),
           to: "/lose/"
         }
@@ -308,7 +308,7 @@ export default {
     },
     {
       id: 19,
-      title: "Te voilà bien reposé, tu peux reprendre la route",
+      title: "Te voilà bien reposé(e), tu peux reprendre la route",
       actions: [
         {
           label: "Cette route a l'air sûre !",
@@ -450,7 +450,7 @@ export default {
           object: "Papiers du véhicule"
         },
         {
-          label: "Oups, je les ai laissés à la maison...",
+          label: "Oups, je les ai laissé à la maison...",
           image: require("/assets/images/roadtrip49.jpg"),
           to: 2501
         }
@@ -468,7 +468,7 @@ export default {
           power: "Charme légendaire"
         },
         {
-          label: "Ce n'est pas mon genre! bande de ripoux !",
+          label: "Ce n'est pas mon genre ! Bande de ripoux !",
           image: require("/assets/images/roadtrip28.jpg"),
           to: 25012
         }
@@ -477,7 +477,7 @@ export default {
     {
       id: 25012,
       title:
-        "Nous allons être dans l'obligation d'immobiliser votre véhicule !",
+        "Alors nous allons être dans l'obligation d'immobiliser votre véhicule !",
       actions: [
         {
           label: "YOU LOSE !",
@@ -527,7 +527,7 @@ export default {
     },
     {
       id: 2801,
-      title: "Vous n'êtes pas équipé !",
+      title: "Vous n'êtes pas équipé(e) !",
       actions: [
         {
           label: "YOU LOSE",
@@ -538,7 +538,7 @@ export default {
     },
     {
       id: 2802,
-      title: "Vous êtes suréquipé-e !",
+      title: "La classe ! Vous êtes suréquipé(e) !",
       actions: [
         {
           label: "Continuer",
@@ -563,7 +563,8 @@ export default {
       title: "QUIZ CINÉMATOGRAPHIQUE",
       actions: [
         {
-          label: "On va voir si tu as été observateur durant cette aventure !",
+          label:
+            "On va voir si tu as été observateur(trice) durant cette aventure !",
           image: require("/assets/images/roadtrip47.jpg"),
           to: "/Qcm"
         }

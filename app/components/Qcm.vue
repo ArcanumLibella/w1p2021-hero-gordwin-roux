@@ -47,7 +47,7 @@ export default {
       checkboxTest: [],
       choices: [
         {
-          label: "Fight Club ",
+          label: "Le Seigneur des Anneaux",
           value: "F21"
         },
         {
@@ -63,7 +63,7 @@ export default {
           value: "F3"
         },
         {
-          label: "Forest Gum ",
+          label: "Forest Gump",
           value: "F14"
         },
         {
@@ -76,7 +76,7 @@ export default {
         },
 
         {
-          label: "Thelma et Louise ",
+          label: "Thelma et Louise",
           value: "F6"
         },
         {
@@ -85,11 +85,11 @@ export default {
         },
 
         {
-          label: " Harry Potter ",
+          label: "Harry Potter",
           value: "F7"
         },
         {
-          label: "On the road",
+          label: "On the Road",
           value: "F44"
         },
         {
@@ -105,11 +105,11 @@ export default {
           value: "F12"
         },
         {
-          label: "Psychose  ",
+          label: "Psychose",
           value: "F29"
         },
         {
-          label: "Kill Bill  ",
+          label: "Kill Bill",
           value: "F31"
         },
         {
@@ -117,7 +117,7 @@ export default {
           value: "F13"
         },
         {
-          label: " La Ligne Verte ",
+          label: "La Ligne Verte",
           value: "F15"
         },
         {
@@ -129,7 +129,7 @@ export default {
           value: "F4"
         },
         {
-          label: "Les Evadés ",
+          label: "Les Evadés",
           value: "F18"
         },
         {
@@ -149,11 +149,11 @@ export default {
           value: "F1"
         },
         {
-          label: "Blanche Neige ",
+          label: "Blanche-Neige",
           value: "F20"
         },
         {
-          label: "Bate's Motel ",
+          label: "Bate's Motel",
           value: "F9"
         },
         {
@@ -165,11 +165,11 @@ export default {
           value: "F23"
         },
         {
-          label: "Gladiator ",
+          label: "Gladiator",
           value: "F24"
         },
         {
-          label: " La Plage  ",
+          label: "La Plage",
           value: "F8"
         }
       ]
@@ -193,6 +193,7 @@ export default {
         "F13",
         "F12",
         "F19",
+        "F21",
         "F23",
         "F31",
         "F32"
