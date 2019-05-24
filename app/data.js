@@ -197,7 +197,7 @@ export default {
         },
         {
           label: "Non",
-          image: require("/assets/images/roadtrip59.gif"),
+          image: require("/assets/images/roadtrip60.gif"),
           to: "/lose/"
         }
       ]
