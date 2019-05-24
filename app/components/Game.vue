@@ -1,14 +1,15 @@
 <template>
   <div class="game">
+  
     <audio  autoplay 
             pause 
             onclick="button" 
             class="audio" 
             ref="audio" 
             v-model="audio">
-      <source src="../assets/audio/lovelyroad.mp3"/> 
-      
+     <!-- <source src="../assets/audio/lovelyroad.mp3"/> -->
     </audio> 
+
     <span class="audio-mute play"
           @click="toggleMute()"
           ref="audioToggle">
@@ -17,16 +18,24 @@
     
     <h2>{{ step.title }}</h2>
     <section class="cards">
-      <article v-for="(action, index) in step.actions" :key="index">
+      
+    <!--<transition name="scale">-->
+      <article v-for="(action, index) in step.actions" :key="index" >
+
+
         <div  class="card"
               v-if="canDo(action)"
               @click="doAction(action)">
+              
               <router-link :to="action.to.toString()">{{ action.label }}</router-link>
               <img v-if="action.image" v-bind:src="action.image">
-              <div v-if="action.object"></div>
+              <div v-if="action.object"></div>  
         </div>
-      </article> 
-    </section> 
+     
+      </article>
+    <!--</transition> -->
+    </section>
+       
   </div>
 </template>
 
@@ -34,7 +43,7 @@
 import game from "../data";
 import objectService from '../services/objectService';
 import powerService from '../services/powerService';
-
+import characterService from '../services/characterService';
 
 export default {
   data: function() {
@@ -43,16 +52,19 @@ export default {
     };
   },
   mounted: function() {
-    console.log("mounted");
+    console.log("mounted", this);
   },
   watch: {
     "$route.params.id"(to, from) {
+      var pageId = parseInt(this.$route.params.id);
+      localStorage.setItem('gamePageId', pageId);
       this.step = this.getStep();
     }
   },
   methods: {
     getStep() {
       return game.steps.find(step => {
+        // localStorage.setItem('gameStep', );
         return step.id === parseInt(this.$route.params.id);
       });
     },
@@ -102,3 +114,22 @@ export default {
   }
 };
 </script>
+
+
+<style lang="scss" scoped>
+// Tout le temps
+.scale-enter-active {
+  transition: transform 3s;
+}
+
+// 1ère frame
+.scale-enter {
+  transform: scale(0) rotate(180deg);
+}
+
+// à partir de la seconde frame
+.scale-enter-to {
+  transform: scale(2) rotate(-270deg);
+}
+
+</style>

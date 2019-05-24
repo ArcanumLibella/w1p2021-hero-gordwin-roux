@@ -15,6 +15,7 @@ class CharacterService {
   // }
   add(name) {
     console.log(characters[name].power);
+    localStorage.setItem('gameCharacterName', name);
     // Si Pamela :
     if (characters[name].power === "Force surhumaine") {
       // Pas besoin de tronçonneuse

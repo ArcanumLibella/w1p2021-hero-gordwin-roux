@@ -13,7 +13,7 @@
     </section>
 
     <section>
-      <router-link class="game__button" to="/">HOME</router-link>
+      <!-- <router-link class="game__button" to="/">HOME</router-link> -->
       <router-link class="game__button" to="/objects">CONTINUE</router-link>
     </section>
   </div>
